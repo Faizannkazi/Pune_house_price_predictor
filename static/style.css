@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  overflow: hidden;
+  animation: backgroundPulse 10s infinite;
+}
+
+@keyframes backgroundPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #aaa;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+  background-color: rgba(0, 255, 231, 0.1);
+  box-shadow: 0 0 5px #00ffe7;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background: #00ffe7;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffe7;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0ff;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #00ffe7;
+  box-shadow: 0 0 10px #00ffe7;
+}
+/* Fix Select2 Dropdown in Dark Mode */
+.select2-container--default .select2-selection--single {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+  line-height: 36px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 36px;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #00ffe7;
+  color: #000;
+}
+
+.select2-dropdown {
+  background-color: #1c1c1c;
+  border: none;
+}
+
+.select2-search--dropdown .select2-search__field {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #00ffe7;
+  border-radius: 6px;
+}
