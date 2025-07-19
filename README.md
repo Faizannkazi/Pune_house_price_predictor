@@ -56,7 +56,7 @@ house_price_pune/
 ## 🔧 How to Run
 
 ### Step 1: Clone the Repository
-'''bash
+```bash
 git clone https://github.com/Faizannkazi/Pune_house_price_predictor.git
 cd Pune_house_price_predictor
 ---
