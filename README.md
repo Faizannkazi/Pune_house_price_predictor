@@ -92,9 +92,3 @@ Predicted Price: ₹ 72.84 Lakh
 ----
 
 
-### 👤 Author
-Kazi Faizan Sadulla
-📧 faizankazi486@gmail.com
-📍 Pune, Maharashtra
-📱 7773906778
----
